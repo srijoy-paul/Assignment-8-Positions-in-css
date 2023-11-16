@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./task_5_style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>About CSS z-index Property</h1>
+    </header>
+    <main>
+      <p>
+        z-index is a CSS property that determines the stacking order of
+        positioned elements on the z-axis (the axis coming out of the screen
+        toward the viewer). It is commonly used to control the visual stacking
+        of overlapping elements. The element with a higher z-index value is
+        displayed in front of elements with lower z-index values.
+      </p>
+      <h2>Examples</h2>
+      <section>
+        <p>
+          In example 1, box2 has higher z-index. So it is stacking over box1.
+        </p>
+        <p>
+          In example 2, box3 has higher z-index. So it is stacking over box4.
+        </p>
+      </section>
+      <section id="main-container">
+        <article id="box-container1">
+          Ex1
+          <div class="box" id="box1">1</div>
+          <div class="box" id="box2">2</div>
+        </article>
+        <article id="box-container2">
+          Ex2
+          <div class="box" id="box3">3</div>
+          <div class="box" id="box4">4</div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

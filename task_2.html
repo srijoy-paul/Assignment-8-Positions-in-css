@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <table border="2" cellpadding="12px">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Relative Positioning</th>
+            <th>Absolute Positioning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Positioning Context</b></td>
+            <td>Relative to its normal position in the document flow.</td>
+            <td>
+              Relative to the nearest positioned ancestor or the initial
+              containing block.
+            </td>
+          </tr>
+          <tr>
+            <td><b>Document Flow Impact</b></td>
+            <td>
+              Takes up space in the normal document flow, affecting surrounding
+              elements.
+            </td>
+            <td>
+              Removed from the normal document flow, does not affect the layout
+              of other elements.
+            </td>
+          </tr>
+          <tr>
+            <td><b>Offset Properties</b></td>
+            <td>Uses top, right, bottom, left relative to its own position.</td>
+            <td>
+              Uses top, right, bottom, left relative to the nearest positioned
+              ancestor or initial containing block.
+            </td>
+          </tr>
+          <tr>
+            <td><b>Containing Block</b></td>
+            <td>
+              The nearest positioned ancestor or initial containing block.
+            </td>
+            <td>
+              The nearest positioned ancestor or initial containing block.
+            </td>
+          </tr>
+          <tr>
+            <td><b>Z-Index</b></td>
+            <td>
+              Stacked relative to its normal position in the document flow.
+            </td>
+            <td>
+              Stacked relative to other positioned elements based on the z-index
+              property.
+            </td>
+          </tr>
+          <tr>
+            <td><b>Use Case</b></td>
+            <td>
+              Useful when you want to position an element relative to its normal
+              flow.
+            </td>
+            <td>
+              Useful when you want precise positioning relative to a specific
+              ancestor without affecting other elements.
+            </td>
+          </tr>
+          <tr>
+            <td><b>Example</b></td>
+            <td>
+              .relative-box { position: relative; top: 20px; left: 30px; }
+            </td>
+            <td>.absolute-box { position: absolute; top: 0; right: 0; }</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
